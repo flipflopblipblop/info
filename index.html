@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta
+      name="description"
+      content="La Boier - Restaurant tradițional și loc pentru evenimente în Bălți, Moldova. Oferim bucătărie autentică moldovenească, grătar, terasă și facilități pentru petreceri private."
+    />
+    <meta
+      name="keywords"
+      content="La Boier, restaurant Bălți, restaurant Moldova, evenimente Bălți, vilă Bălți, cazare Bălți, grătar, bucătărie tradițională, petreceri private, nunți Bălți"
+    />
+    <meta name="author" content="La Boier" />
+    <meta name="robots" content="index, follow" />
+
+    <meta
+      property="og:title"
+      content="La Boier | Restaurant Tradițional & Loc pentru Evenimente"
+    />
+    <meta
+      property="og:description"
+      content="Descoperă La Boier în Bălți - o vilă tradițională cu bucătărie autentică, grătar și facilități pentru evenimente memorabile."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ro_MD" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>
+      La Boier | Restaurant Tradițional & Loc pentru Evenimente în Bălți
+    </title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <div class="nav-logo">
+          <a href="index.html" class="nav-logo-text">La Boier</a>
+        </div>
+
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Deschide meniul"
+          aria-expanded="false"
+        >
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link active">Acasă</a></li>
+          <li><a href="events.html" class="nav-link">Evenimente & Meniu</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li>
+            <a href="contact.html#calculator" class="nav-link nav-link-cta"
+              >Rezervă</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero" id="hero">
+      <div class="hero-3d-container" id="hero3dContainer">
+        <canvas id="barrelCanvas"></canvas>
+      </div>
+
+      <div class="hero-content">
+        <h1 class="hero-title">Bine ați venit!</h1>
+        <p class="hero-subtitle">
+          Restaurant tradițional & loc pentru evenimente în Moldova
+        </p>
+        <p class="hero-description">
+          Descoperă un loc special în Bălți unde tradiția întâlnește modernul.
+          Vilă elegantă cu terasă, grătar și o grădină superbă — perfectă pentru
+          sărbători de familie, petreceri sau momente de relaxare.
+        </p>
+        <div class="hero-cta">
+          <a href="contact.html#calculator" class="btn btn-primary">Rezervă</a>
+          <a href="events.html" class="btn btn-outline btn-outline-white"
+            >Meniu</a
+          >
+        </div>
+      </div>
+
+      <div class="hero-scroll">
+        <div class="hero-scroll-icon"></div>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-image">
+            <img
+              src="images/about-villa.jpg"
+              alt="Vila La Boier - vedere exterioară cu grădină"
+              loading="lazy"
+            />
+          </div>
+          <div class="about-content">
+            <h2>Despre noi</h2>
+            <p>
+              Situată în apropierea orașului Bălți, La Boier este o vilă unde
+              natura se îmbină armonios cu confortul modern.
+            </p>
+            <p>
+              Cu o suprafață de 50 m², vila noastră oferă WiFi gratuit, parcare
+              privată, aer condiționat și o bucătărie complet echipată. Grădina
+              luxuriantă cu zonă de grătar și terasă acoperită transformă orice
+              vizită într-o experiență de neuitat :)
+            </p>
+            <p>
+              <strong
+                >Evaluata 10/10 "Excepțional" pe Booking.com de către 26
+                oaspeți!</strong
+              >
+            </p>
+            <a href="events.html" class="btn btn-primary">Descoperă</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features section" id="features">
+      <div class="container text-center">
+        <h2>Ce Oferim</h2>
+        <div class="carousel">
+          <button class="carousel-btn carousel-btn-prev" aria-label="Previous">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+          <div class="carousel-track-container">
+            <div class="carousel-track">
+              <div class="carousel-slide">
+                <div class="carousel-image">
+                  <img src="images/carousel-1.jpg" alt="Vilă Confortabilă" />
+                </div>
+                <div class="carousel-content">
+                  <div class="feature-icon">🏠</div>
+                  <h3>Vilă Confortabilă</h3>
+                  <p>
+                    Dormitor spațios, TV cu ecran plat, bucătărie complet
+                    echipată și toate facilitățile moderne pentru un sejur
+                    perfect.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-slide">
+                <div class="carousel-image">
+                  <img src="images/carousel-2.jpg" alt="Grădină & Terasă" />
+                </div>
+                <div class="carousel-content">
+                  <div class="feature-icon">🌳</div>
+                  <h3>Grădină & Terasă</h3>
+                  <p>
+                    Relaxează-te în grădina noastră frumoasă, sub umbra nucilor
+                    mari, cu vedere la lac și natură.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-slide">
+                <div class="carousel-image">
+                  <img src="images/carousel-3.jpg" alt="Zonă de Grătar" />
+                </div>
+                <div class="carousel-content">
+                  <div class="feature-icon">🍖</div>
+                  <h3>Zonă de Grătar</h3>
+                  <p>
+                    Bucură-te de un grătar autentic în aer liber, cu masă mare
+                    pentru familie și prieteni.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-slide">
+                <div class="carousel-image">
+                  <img src="images/carousel-4.jpg" alt="Evenimente Private" />
+                </div>
+                <div class="carousel-content">
+                  <div class="feature-icon">🎉</div>
+                  <h3>Evenimente Private</h3>
+                  <p>
+                    Organizează petreceri, aniversări sau întâlniri de familie
+                    într-un cadru rustic și elegant.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-slide">
+                <div class="carousel-image">
+                  <img src="images/carousel-5.jpg" alt="Activități în Natură" />
+                </div>
+                <div class="carousel-content">
+                  <div class="feature-icon">🎣</div>
+                  <h3>Activități în Natură</h3>
+                  <p>Pescuit, drumeții și plimbări cu bicicleta!</p>
+                </div>
+              </div>
+              <div class="carousel-slide">
+                <div class="carousel-image">
+                  <img src="images/carousel-6.jpg" alt="Pentru Familii" />
+                </div>
+                <div class="carousel-content">
+                  <div class="feature-icon">👨‍👩‍👧‍👦</div>
+                  <h3>Pentru Familii</h3>
+                  <p>
+                    Teren de joacă pentru copii și spațiu generos pentru toată
+                    familia, până la 6 persoane.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-btn carousel-btn-next" aria-label="Next">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+          <div class="carousel-dots"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews section" id="reviews">
+      <div class="container text-center">
+        <h2>Ce Spun Oaspeții Noștri</h2>
+        <div class="reviews-grid">
+          <div class="review-card">
+            <div class="review-rating">★★★★★</div>
+            <p class="review-text">
+              "Locație și priveliști uimitoare! Acest loc a fost unul dintre
+              cele mai bune locuri de cazare din vacanța noastră. Casa era
+              spațioasă și curată. Gazdele au fost minunate!"
+            </p>
+            <p class="review-author">Andro</p>
+            <p class="review-location">
+              <img src="images/flag-ee.svg" alt="Estonia" /> Estonia
+            </p>
+          </div>
+          <div class="review-card">
+            <div class="review-rating">★★★★★</div>
+            <p class="review-text">
+              "Adevărata pace a raiului în mijlocul nicăieri. Ne-a plăcut să
+              stăm într-o casă perfectă cu șemineu și loc grozav de grătar."
+            </p>
+            <p class="review-author">Jan</p>
+            <p class="review-location">
+              <img src="images/flag-cz.svg" alt="Republica Cehă" /> Republica
+              Cehă
+            </p>
+          </div>
+          <div class="review-card">
+            <div class="review-rating">★★★★★</div>
+            <p class="review-text">
+              "O casă foarte confortabilă, care are tot ce ai nevoie pentru o
+              vacanță alături de cei dragi. Pe vreme caldă este ușor să te
+              ascunzi de soare la umbra nucilor mari."
+            </p>
+            <p class="review-author">Valerii</p>
+            <p class="review-location">
+              <img src="images/flag-md.svg" alt="Moldova" /> Moldova
+            </p>
+          </div>
+        </div>
+        <p style="margin-top: var(--spacing-md)">
+          <a
+            href="https://www.booking.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-outline"
+          >
+            Recenzii pe Booking.com →
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <h3>La Boier</h3>
+            <p>
+              Vilă tradițională în apropierea orașului Bălți, Moldova. Locul
+              perfect pentru relaxare, evenimente și momente speciale alături de
+              cei dragi.
+            </p>
+            <div class="footer-social" style="margin-top: var(--spacing-sm)">
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                ><img src="images/icon-facebook.svg" alt="Facebook"
+              /></a>
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                ><img src="images/icon-instagram.svg" alt="Instagram"
+              /></a>
+              <a
+                href="https://wa.me/373"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="WhatsApp"
+                ><img src="images/icon-whatsapp.svg" alt="WhatsApp"
+              /></a>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h4>Navigare</h4>
+            <div class="footer-links">
+              <a href="index.html">Acasă</a>
+              <a href="events.html">Evenimente & Meniu</a>
+              <a href="contact.html">Contact</a>
+              <a href="contact.html#calculator">Rezervări</a>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h4>Contact</h4>
+            <div class="footer-links">
+              <a href="tel:+373XXXXXXXX">+373 XX XXX XXX</a>
+              <a href="mailto:contact@laboier.md">contact@laboier.md</a>
+              <p style="color: rgba(245, 245, 220, 0.8)">
+                daci La Livadă, Bălți, Moldova
+              </p>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h4>Program</h4>
+            <div class="footer-links">
+              <p style="color: rgba(245, 245, 220, 0.8)">
+                Check-in: 13:00 - 15:00
+              </p>
+              <p style="color: rgba(245, 245, 220, 0.8)">
+                Check-out: 10:00 - 11:00
+              </p>
+              <p style="color: rgba(245, 245, 220, 0.8)">Recepție: 24/7</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 La Boier. Toate drepturile rezervate.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/meshoptimizer@0.18.1/meshopt_decoder.js"></script>
+
+    <script src="js/script.js"></script>
+
+    <script src="js/barrel-scene.js"></script>
+  </body>
+</html>

@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta
+      name="description"
+      content="Descoperă meniul și serviciile pentru evenimente la La Boier. Organizăm petreceri private, aniversări și evenimente speciale în Bălți, Moldova."
+    />
+    <meta
+      name="keywords"
+      content="meniu La Boier, evenimente Bălți, petreceri private Moldova, aniversări, nunți, grătar tradițional"
+    />
+    <meta name="author" content="La Boier" />
+    <meta name="robots" content="index, follow" />
+
+    <meta property="og:title" content="Evenimente & Meniu | La Boier" />
+    <meta
+      property="og:description"
+      content="Organizează evenimente speciale și descoperă ofertele noastre la La Boier în Bălți."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ro_MD" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>Evenimente & Meniu | La Boier - Bălți, Moldova</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <div class="nav-logo">
+          <a href="index.html" class="nav-logo-text">La Boier</a>
+        </div>
+
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Deschide meniul"
+          aria-expanded="false"
+        >
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link active">Acasă</a></li>
+          <li><a href="events.html" class="nav-link">Evenimente & Meniu</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li>
+            <a href="contact.html#calculator" class="nav-link nav-link-cta"
+              >Rezervă</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div style="height: 44px"></div>
+
+    <section class="menu-section section" id="menu">
+      <div class="container">
+        <h2 class="text-center" style="margin-bottom: var(--spacing-sm)">
+          Meniul Nostru
+        </h2>
+        <p
+          class="text-center"
+          style="margin-bottom: var(--spacing-lg); color: var(--gray)"
+        >
+          Bucătărie tradițională moldovenească pregătită cu ingrediente
+          proaspete și locale
+        </p>
+
+        <div class="menu-categories">
+          <button class="menu-category-btn active" data-category="all">
+            Toate
+          </button>
+          <button class="menu-category-btn" data-category="appetizers">
+            Aperitive
+          </button>
+          <button class="menu-category-btn" data-category="main">
+            Feluri Principale
+          </button>
+          <button class="menu-category-btn" data-category="grill">
+            Grătar
+          </button>
+          <button class="menu-category-btn" data-category="desserts">
+            Deserturi
+          </button>
+          <button class="menu-category-btn" data-category="drinks">
+            Băuturi
+          </button>
+        </div>
+
+        <div class="menu-grid" id="menuGrid">
+          <div class="menu-item" data-category="appetizers">
+            <div class="menu-item-info">
+              <h4>Platou Tradițional</h4>
+              <p>Brânză de oi, șuncă de casă, murături, roșii și ardei</p>
+            </div>
+            <span class="menu-item-price">180 MDL</span>
+          </div>
+
+          <div class="menu-item" data-category="appetizers">
+            <div class="menu-item-info">
+              <h4>Salată de Vinete</h4>
+              <p>Vinete coapte pe grătar cu usturoi și verdeață</p>
+            </div>
+            <span class="menu-item-price">65 MDL</span>
+          </div>
+
+          <div class="menu-item" data-category="appetizers">
+            <div class="menu-item-info">
+              <h4>Brânză de Casă</h4>
+              <p>Brânză proaspătă cu smântână și mărar</p>
+            </div>
+            <span class="menu-item-price">55 MDL</span>
+          </div>
+
+          <div class="menu-item" data-category="main">
+            <div class="menu-item-info">
+              <h4>Mămăligă cu Brânză și Smântână</h4>
+              <p>Mămăligă tradițională servită cu brânză topită și smântână</p>
+            </div>
+            <span class="menu-item-price">85 MDL</span>
+          </div>
+
+          <div class="menu-item" data-category="main">
+            <div class="menu-item-info">
+              <h4>Sarmale Moldovenești</h4>
+              <p>Sarmale în foi de viță sau varză, cu smântână</p>
+            </div>
+            <span class="menu-item-price">120 MDL</span>
+          </div>
+
+          <div class="menu-item" data-category="main">
+            <div class="menu-item-info">
+              <h4>Tocăniță de Pui</h4>
+              <p>Pui fraged în sos de roșii cu usturoi și ardei</p>
+            </div>
+            <span class="menu-item-price">110 MDL</span>
+          </div>
+
+          <div class="menu-item" data-category="main">
+            <div class="menu-item-info">
+              <h4>Plăcinte cu Brânză</h4>
+              <p>Plăcinte tradiționale cu brânză dulce sau sărată</p>
+            </div>
+            <span class="menu-item-price">45 MDL</span>
+          </div>
+
+          <div class="menu-item" data-category="grill">
+            <div class="menu-item-info">
+              <h4>Mici (10 buc)</h4>
+              <p>Mititei tradiționali pe grătar cu muștar și pâine</p>
+            </div>
+            <span class="menu-item-price">150 MDL</span>
+          </div>
+
+          <div class="menu-item" data-category="grill">
+            <div class="menu-item-info">
+              <h4>Frigărui de Porc</h4>
+              <p>Frigărui marinate în sos special, servite cu legume</p>
+            </div>
+            <span class="menu-item-price">180 MDL</span>
+          </div>
+
+          <div class="menu-item" data-category="grill">
+            <div class="menu-item-info">
+              <h4>Costițe la Grătar</h4>
+              <p>Costițe de porc în sos BBQ, coapte lent</p>
+            </div>
+            <span class="menu-item-price">220 MDL</span>
+          </div>
+
+          <div class="menu-item" data-category="grill">
+            <div class="menu-item-info">
+              <h4>Legume la Grătar</h4>
+              <p>Ardei, vinete, dovlecei și ciuperci pe grătar</p>
+            </div>
+            <span class="menu-item-price">75 MDL</span>
+          </div>
+
+          <div class="menu-item" data-category="desserts">
+            <div class="menu-item-info">
+              <h4>Papanași cu Smântână</h4>
+              <p>Papanași tradiționali cu smântână și dulceață</p>
+            </div>
+            <span class="menu-item-price">85 MDL</span>
+          </div>
+
+          <div class="menu-item" data-category="desserts">
+            <div class="menu-item-info">
+              <h4>Plăcintă cu Mere</h4>
+              <p>Plăcintă caldă cu mere și scorțișoară</p>
+            </div>
+            <span class="menu-item-price">50 MDL</span>
+          </div>
+
+          <div class="menu-item" data-category="desserts">
+            <div class="menu-item-info">
+              <h4>Cozonac de Casă</h4>
+              <p>Cozonac tradițional cu nucă și cacao</p>
+            </div>
+            <span class="menu-item-price">40 MDL</span>
+          </div>
+
+          <div class="menu-item" data-category="drinks">
+            <div class="menu-item-info">
+              <h4>Vin de Casă (750ml)</h4>
+              <p>Vin roșu sau alb din soiuri locale</p>
+            </div>
+            <span class="menu-item-price">120 MDL</span>
+          </div>
+
+          <div class="menu-item" data-category="drinks">
+            <div class="menu-item-info">
+              <h4>Compot de Casă</h4>
+              <p>Compot natural din fructe de sezon</p>
+            </div>
+            <span class="menu-item-price">25 MDL</span>
+          </div>
+
+          <div class="menu-item" data-category="drinks">
+            <div class="menu-item-info">
+              <h4>Ceai cu Miere</h4>
+              <p>Ceai de plante cu miere naturală</p>
+            </div>
+            <span class="menu-item-price">30 MDL</span>
+          </div>
+
+          <div class="menu-item" data-category="drinks">
+            <div class="menu-item-info">
+              <h4>Cafea Turcească</h4>
+              <p>Cafea pregătită tradițional în ibric</p>
+            </div>
+            <span class="menu-item-price">35 MDL</span>
+          </div>
+        </div>
+
+        <p
+          class="text-center"
+          style="
+            margin-top: var(--spacing-lg);
+            color: var(--gray);
+            font-size: 0.9rem;
+          "
+        >
+          * Prețurile sunt orientative. Meniul poate varia în funcție de sezon
+          și disponibilitate.<br />
+          * Pentru evenimente mari, oferim meniuri personalizate. Contactează-ne
+          pentru detalii.
+        </p>
+      </div>
+    </section>
+
+    <section
+      class="section"
+      style="background-color: var(--wood-brown); color: var(--white)"
+    >
+      <div class="container text-center">
+        <h2 style="color: var(--cream); margin-bottom: var(--spacing-lg)">
+          Pachete pentru Evenimente
+        </h2>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">⭐</div>
+            <h3>Pachet Basic</h3>
+            <p style="margin-bottom: var(--spacing-sm)">
+              Închiriere vilă pentru o zi<br />Grătar și ustensile<br />Acces
+              grădină și terasă
+            </p>
+            <p style="font-size: 1.5rem; font-weight: 700">de la 2500 MDL</p>
+          </div>
+          <div
+            class="feature-card"
+            style="
+              background-color: rgba(34, 139, 34, 0.3);
+              border: 2px solid var(--forest-green);
+            "
+          >
+            <div class="feature-icon">🌟</div>
+            <h3>Pachet Premium</h3>
+            <p style="margin-bottom: var(--spacing-sm)">
+              Toate facilitățile Basic<br />+ Set grătar premium<br />+
+              Decorațiuni de bază<br />+ Check-out prelungit
+            </p>
+            <p style="font-size: 1.5rem; font-weight: 700">de la 4000 MDL</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">👑</div>
+            <h3>Pachet VIP</h3>
+            <p style="margin-bottom: var(--spacing-sm)">
+              Toate facilitățile Premium<br />+ Meniu catering complet<br />+
+              Servicii de organizare<br />+ Cazare inclusă
+            </p>
+            <p style="font-size: 1.5rem; font-weight: 700">de la 7500 MDL</p>
+          </div>
+        </div>
+
+        <a
+          href="contact.html"
+          class="btn"
+          style="
+            background-color: var(--cream);
+            color: var(--wood-brown);
+            margin-top: var(--spacing-lg);
+          "
+        >
+          Solicită Ofertă Personalizată
+        </a>
+      </div>
+    </section>
+
+    <section
+      class="section"
+      style="
+        background: linear-gradient(
+          135deg,
+          var(--forest-green) 0%,
+          var(--forest-green-dark) 100%
+        );
+        color: var(--white);
+      "
+    >
+      <div class="container text-center">
+        <h2 style="color: var(--white); margin-bottom: var(--spacing-sm)">
+          Planifică Evenimentul Tău
+        </h2>
+        <p
+          style="
+            margin-bottom: var(--spacing-md);
+            font-size: 1.1rem;
+            opacity: 0.95;
+          "
+        >
+          Contactează-ne pentru o ofertă personalizată sau folosește
+          calculatorul nostru de prețuri.
+        </p>
+        <div
+          style="
+            display: flex;
+            gap: var(--spacing-sm);
+            justify-content: center;
+            flex-wrap: wrap;
+          "
+        >
+          <a
+            href="contact.html#calculator"
+            class="btn"
+            style="background-color: var(--white); color: var(--forest-green)"
+            >Calculează Prețul</a
+          >
+          <a
+            href="contact.html"
+            class="btn btn-outline"
+            style="border-color: var(--white); color: var(--white)"
+            >Contactează-ne</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <h3>La Boier</h3>
+            <p>
+              Vilă tradițională în apropierea orașului Bălți, Moldova. Locul
+              perfect pentru relaxare, evenimente și momente speciale alături de
+              cei dragi.
+            </p>
+            <div class="footer-social" style="margin-top: var(--spacing-sm)">
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                ><img src="images/icon-facebook.svg" alt="Facebook"
+              /></a>
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                ><img src="images/icon-instagram.svg" alt="Instagram"
+              /></a>
+              <a
+                href="https://wa.me/373"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="WhatsApp"
+                ><img src="images/icon-whatsapp.svg" alt="WhatsApp"
+              /></a>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h4>Navigare</h4>
+            <div class="footer-links">
+              <a href="index.html">Acasă</a>
+              <a href="events.html">Evenimente & Meniu</a>
+              <a href="contact.html">Contact</a>
+              <a href="contact.html#calculator">Rezervări</a>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h4>Contact</h4>
+            <div class="footer-links">
+              <a href="tel:+373XXXXXXXX">+373 XX XXX XXX</a>
+              <a href="mailto:contact@laboier.md">contact@laboier.md</a>
+              <p style="color: rgba(245, 245, 220, 0.8)">
+                daci La Livadă, Bălți, Moldova
+              </p>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h4>Program</h4>
+            <div class="footer-links">
+              <p style="color: rgba(245, 245, 220, 0.8)">
+                Check-in: 13:00 - 15:00
+              </p>
+              <p style="color: rgba(245, 245, 220, 0.8)">
+                Check-out: 10:00 - 11:00
+              </p>
+              <p style="color: rgba(245, 245, 220, 0.8)">Recepție: 24/7</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 La Boier. Toate drepturile rezervate.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta
+      name="description"
+      content="Contactează La Boier pentru rezervări și informații. Telefon, email, adresă și hartă pentru vila noastră din Bălți, Moldova."
+    />
+    <meta
+      name="keywords"
+      content="contact La Boier, rezervări Bălți, telefon La Boier, adresă La Boier, hartă Bălți"
+    />
+    <meta name="author" content="La Boier" />
+    <meta name="robots" content="index, follow" />
+
+    <meta property="og:title" content="Contact | La Boier" />
+    <meta
+      property="og:description"
+      content="Contactează-ne pentru rezervări la La Boier în Bălți, Moldova."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ro_MD" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>Contact | La Boier - Rezervări & Informații</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <div class="nav-logo">
+          <a href="index.html" class="nav-logo-text">La Boier</a>
+        </div>
+
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Deschide meniul"
+          aria-expanded="false"
+        >
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link active">Acasă</a></li>
+          <li><a href="events.html" class="nav-link">Evenimente & Meniu</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li>
+            <a href="contact.html#calculator" class="nav-link nav-link-cta"
+              >Rezervă</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="contact-section section">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h2>Contactează-ne</h2>
+            <p>
+              Suntem aici să te ajutăm să planifici o experiență de neuitat la
+              La Boier. Contactează-ne pentru rezervări, întrebări sau
+              informații suplimentare.
+            </p>
+
+            <div class="contact-details">
+              <div class="contact-item">
+                <span class="contact-icon">📍</span>
+                <div>
+                  <h4>Adresă</h4>
+                  <p>daci La Livadă<br />Bălți, Moldova</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <span class="contact-icon">📞</span>
+                <div>
+                  <h4>Telefon</h4>
+                  <a href="tel:+373XXXXXXXX">+373 XX XXX XXX</a>
+                  <p style="font-size: 0.875rem; color: var(--gray-light)">
+                    Disponibil 24/7
+                  </p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <span class="contact-icon">✉️</span>
+                <div>
+                  <h4>Email</h4>
+                  <a href="mailto:contact@laboier.md">contact@laboier.md</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <span class="contact-icon">🕐</span>
+                <div>
+                  <h4>Program</h4>
+                  <p>
+                    Check-in: 13:00 - 15:00<br />
+                    Check-out: 10:00 - 11:00<br />
+                    Ore de liniște: 22:00 - 07:00
+                  </p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <span class="contact-icon">🌐</span>
+                <div>
+                  <h4>Limbi Vorbite</h4>
+                  <p>Română, Rusă, Ucraineană</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-wrapper">
+            <h3>Trimite-ne un Mesaj</h3>
+            <form id="contactForm" class="contact-form">
+              <div class="form-group">
+                <label for="name">Nume Complet *</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  placeholder="Ion Popescu"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="email@exemplu.md"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Telefon</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="+373 XX XXX XXX"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subiect</label>
+                <select id="subject" name="subject">
+                  <option value="">Selectează subiectul</option>
+                  <option value="rezervare">Rezervare</option>
+                  <option value="eveniment">Organizare Eveniment</option>
+                  <option value="informatii">Informații Generale</option>
+                  <option value="feedback">Feedback</option>
+                  <option value="altele">Altele</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Mesaj *</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  required
+                  placeholder="Scrie mesajul tău aici..."
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%">
+                Trimite
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="map-container">
+          <h3 class="text-center" style="margin-bottom: var(--spacing-md)">
+            Locația Noastră
+          </h3>
+          <div class="map-wrapper">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2682.22761141272!2d27.8355177!3d47.7576393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cb5d55315f164b%3A0x213c6ca2cd9a36a5!2sLa%20Boier!5e0!3m2!1sen!2s!4v1768681209755!5m2!1sen!2s"
+              width="100%"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="calculator-section section" id="calculator">
+      <div class="container">
+        <h2 class="text-center" style="margin-bottom: var(--spacing-md)">
+          Calculator
+        </h2>
+
+        <div class="calculator-wrapper">
+          <form id="calculatorForm">
+            <div class="form-group">
+              <label for="checkIn">Vom ajunge pe...</label>
+              <input type="date" id="checkIn" name="checkIn" required />
+            </div>
+
+            <div class="form-group">
+              <label for="checkOut">Vom pleca pe...</label>
+              <input type="date" id="checkOut" name="checkOut" required />
+            </div>
+
+            <div class="form-group">
+              <label for="guests">Vom fi...</label>
+              <select id="guests" name="guests" required>
+                <option value="1">1 Oaspete</option>
+                <option value="2" selected>2 Oaspeți</option>
+                <option value="3">3 Oaspeți</option>
+                <option value="4">4 Oaspeți</option>
+                <option value="5">5 Oaspeți</option>
+                <option value="6">6 Oaspeți</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="extras">Servicii Suplimentare</label>
+              <div class="checkbox-group">
+                <label class="checkbox-label">
+                  <input
+                    type="checkbox"
+                    id="extraBbq"
+                    name="extras"
+                    value="bbq"
+                  />
+                  <span>Set Grătar Premium (+200 MDL)</span>
+                </label>
+                <label class="checkbox-label">
+                  <input
+                    type="checkbox"
+                    id="extraBike"
+                    name="extras"
+                    value="bike"
+                  />
+                  <span>Închiriere Biciclete (+100 MDL/zi)</span>
+                </label>
+                <label class="checkbox-label">
+                  <input
+                    type="checkbox"
+                    id="extraBreakfast"
+                    name="extras"
+                    value="breakfast"
+                  />
+                  <span>Mic Dejun Tradițional (+150 MDL/persoană)</span>
+                </label>
+                <label class="checkbox-label">
+                  <input
+                    type="checkbox"
+                    id="extraLateCheckout"
+                    name="extras"
+                    value="latecheckout"
+                  />
+                  <span>Check-out Tardiv (+250 MDL)</span>
+                </label>
+              </div>
+            </div>
+
+            <button
+              type="button"
+              id="calculateBtn"
+              class="btn btn-primary"
+              style="width: 100%"
+            >
+              Calculează
+            </button>
+          </form>
+
+          <div
+            class="calculator-result"
+            id="calculatorResult"
+            style="display: none"
+          >
+            <h4>Preț Estimativ Total</h4>
+            <p class="price" id="totalPrice">0 MDL</p>
+            <p
+              style="
+                font-size: 0.875rem;
+                opacity: 0.8;
+                margin-top: var(--spacing-xs);
+              "
+            >
+              <span id="nightsCount">0</span> nopți ×
+              <span id="nightlyRate">0</span> MDL/noapte
+            </p>
+            <p
+              style="
+                font-size: 0.75rem;
+                opacity: 0.7;
+                margin-top: var(--spacing-xs);
+              "
+              id="extrasBreakdown"
+            ></p>
+          </div>
+        </div>
+
+        <p
+          class="text-center"
+          style="
+            margin-top: var(--spacing-md);
+            font-size: 0.875rem;
+            color: var(--gray);
+          "
+        >
+          * Prețurile sunt estimative și pot varia în funcție de sezon și
+          disponibilitate. Contactează-ne pentru oferta finală.
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <h3>La Boier</h3>
+            <p>
+              Vilă tradițională în apropierea orașului Bălți, Moldova. Locul
+              perfect pentru relaxare, evenimente și momente speciale alături de
+              cei dragi.
+            </p>
+            <div class="footer-social" style="margin-top: var(--spacing-sm)">
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                ><img src="images/icon-facebook.svg" alt="Facebook"
+              /></a>
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                ><img src="images/icon-instagram.svg" alt="Instagram"
+              /></a>
+              <a
+                href="https://wa.me/373"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="WhatsApp"
+                ><img src="images/icon-whatsapp.svg" alt="WhatsApp"
+              /></a>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h4>Navigare</h4>
+            <div class="footer-links">
+              <a href="index.html">Acasă</a>
+              <a href="events.html">Evenimente & Meniu</a>
+              <a href="contact.html">Contact</a>
+              <a href="contact.html#calculator">Rezervări</a>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h4>Contact</h4>
+            <div class="footer-links">
+              <a href="tel:+373XXXXXXXX">+373 XX XXX XXX</a>
+              <a href="mailto:contact@laboier.md">contact@laboier.md</a>
+              <p style="color: rgba(245, 245, 220, 0.8)">
+                daci La Livadă, Bălți, Moldova
+              </p>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h4>Program</h4>
+            <div class="footer-links">
+              <p style="color: rgba(245, 245, 220, 0.8)">
+                Check-in: 13:00 - 15:00
+              </p>
+              <p style="color: rgba(245, 245, 220, 0.8)">
+                Check-out: 10:00 - 11:00
+              </p>
+              <p style="color: rgba(245, 245, 220, 0.8)">Recepție: 24/7</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 La Boier. Toate drepturile rezervate.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
